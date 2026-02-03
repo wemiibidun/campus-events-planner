@@ -36,7 +36,7 @@ Campus Events Planner is a front‑end scheduling tool that lets users build a c
 4. Data is saved locally so it stays after refresh.
 
 ## Link to Published Project
-(Coming soon)
+https://wemiibidun.github.io/campus-events-planner/
 
 ## Status
 Project is: _Complete_
