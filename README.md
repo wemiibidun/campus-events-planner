@@ -14,7 +14,7 @@
 Campus Events Planner is a front‑end scheduling tool that lets users build a custom calendar grid, add campus events, and manage schedules in one place.
 
 ## Screenshot
-Add a screenshot here after deployment.
+![Sample image](https://github.com/wemiibidun/portfolio_resume/blob/main/portfolio_resume.png)
 
 ## Technologies
 * HTML — layout structure
