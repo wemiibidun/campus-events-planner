@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Campus Events Planner</title>
+    <link rel="stylesheet" href="./assets/css/styles.css" />
+  </head>
+
+  <body>
+    <div class="page">
+      <header class="hero">
+        <h1 class="event_heading">Campus Events Planner</h1>
+        <p class="subtitle">
+          Build a custom calendar grid, add campus events to any day, and
+          manage schedules in one place.
+        </p>
+      </header>
+
+      <section class="layout">
+        <div class="card controls">
+          <h2>Build Your Calendar</h2>
+          <form id="myform" class="my_form">
+            <div class="field">
+              <label for="rows">Rows</label>
+              <input type="number" id="rows" min="1" max="8" placeholder="e.g. 5" />
+            </div>
+            <div class="field">
+              <label for="columns">Columns</label>
+              <input type="number" id="columns" min="1" max="8" placeholder="e.g. 7" />
+            </div>
+            <div class="button_container">
+              <button type="button" onclick="createTable();">Create calendar</button>
+              <button type="button" class="ghost" onclick="refreshPage(); clearButton();">
+                Reset
+              </button>
+            </div>
+            <p id="output" class="output"></p>
+          </form>
+        </div>
+
+        <div class="card calendar">
+          <div class="calendar-header">
+            <h2>Calendar View</h2>
+            <span class="helper">Click “Manage” to add or view events.</span>
+          </div>
+          <div id="calendarMount" class="calendar-mount"></div>
+        </div>
+
+        <aside class="card panel" id="eventPanel">
+          <div class="panel-header">
+            <h2>Event Details</h2>
+            <button type="button" class="close" onclick="hideEventDetail();">Close</button>
+          </div>
+          <p class="panel-date" id="panelDate">Select a date</p>
+
+          <div class="panel-body">
+            <div class="panel-input">
+              <input type="text" id="eventInput" placeholder="Add an event" />
+              <button type="button" id="addEventBtn">Add</button>
+            </div>
+            <ul id="eventList" class="event-list"></ul>
+            <p id="emptyState" class="empty">No events added yet.</p>
+          </div>
+        </aside>
+      </section>
+    </div>
+
+    <script src="js/script.js"></script>
+  </body>
+</html>
